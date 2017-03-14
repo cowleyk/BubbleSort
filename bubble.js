@@ -9,15 +9,11 @@ function bubbleSort(arr){
     }
   }
   if(rerun === true){
-    bubbleSort(arr);
+    return bubbleSort(arr);
   }
-  return arr;
-
-  // wrapping return in an else statement causes return to be undefined, but the inner console.log to work.  why?
-  // else{
-  //   console.log(arr);
-  //   return arr;
-  // }
+  else {
+    return arr;
+  }
 }
 
 
